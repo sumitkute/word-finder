@@ -1,4 +1,4 @@
-import express from 'express';
+﻿import express from 'express';
 import bodyParser from 'body-parser';
 import fs from 'fs';
 import { search } from './lib/words';
@@ -27,6 +27,6 @@ app.post('/search', function (req, res) {
   });
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 80);
 
-console.log('Listening on port: ' + (process.env.PORT || 3000));
+console.log('Listening on port: ' + (process.env.PORT || 80));
